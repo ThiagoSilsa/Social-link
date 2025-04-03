@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+/* Importing font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+
+/* Creating variables for the colors i will use */
+:root {
+    --green: hsl(75, 94%, 57%);
+    --white1: hsl(0, 0%, 100%);
+    --gray1: hsl(0, 0%, 20%);
+    --gray2: hsl(0, 0%, 12%);
+    --gray3: hsl(0, 0%, 8%);
+}
+
+
+/* General setups */
+* {
+    font-family: "Inter";
+    color: var(--white1);
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+
+
+body {
+    background-color: var(--gray3);
+}
+
+main {
+    max-width: 400px;
+    width: 85vw;
+
+    max-height: 550px;
+    min-height: 550px;
+    height: 85vh;
+
+
+    background-color: var(--gray2);
+    border-radius: 35px;
+    box-shadow: 0px 0px 5px var(--green);
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main>section.info {
+    padding: 15px;
+    text-align: center;
+}
+
+main>section.info>img {
+    border: 1px solid var(--green);
+    border-radius: 50%;
+    height: 150px;
+}
+
+main>section.info>h2 {
+    font-size: 0.8em;
+    color: var(--green);
+}
+
+main>section.info>h2,
+p,
+h1 {
+    margin-bottom: 10px;
+}
+
+
+main>section.links {
+    margin: 0px 25px;
+}
+
+
+main>section.links a {
+    display: block;
+    text-align: center;
+    margin: 15px;
+    padding: 5px;
+
+    box-shadow: 0px 0px 2px var(--green);
+    border-radius: 10px;
+
+    text-decoration: none;
+    background-color: var(--gray1);
+}
+
+
+main>section.links>a:hover {
+    background-color: var(--green);
+    color: var(--gray3);
+    transition: 0.3s;
+}
